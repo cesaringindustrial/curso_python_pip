@@ -18,7 +18,7 @@ def run():
     if len(result) >0:
         country = result[0]
         labels, values = utils.get_population(country)
-        grafica.generate_bar_chart(labels, values)
+        grafica.generate_bar_chart(country['Country/Territory'],labels, values)
     
   
 
